@@ -7,4 +7,5 @@ ENTRYPOINT [“/usr/sbin/nginx”,”-g”,”daemon off;”]
 EXPOSE 80 
 ARG environment
 ENV environment=${environment:-production}  
-
+ARG environment
+ENV environment=${environment:-production}
